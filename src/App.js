@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Home from "./components/Home";
+import React, {useState} from "react";
+import MainPage from "./components/MainPage";
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  function loginHandler (email, password) {
+    // We should of course check email and password
+    // But it's just a dummy/ demo anyways
+    // Let me know when you get to this part to work with you on it
+    setIsLoggedIn(true);
+  };
+
+  const logoutHandler = () => {
+    setIsLoggedIn(false);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!isLoggedIn && <Home onLogin={loginHandler}></Home>}
+      {isLoggedIn && <MainPage onLogout={logoutHandler}/>}
+      
     </div>
   );
 }

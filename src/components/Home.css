@@ -1,0 +1,100 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.login-form__title{
+    color: aliceblue;
+}
+
+.login-form__input{
+    padding: 0.5rem 2rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid aliceblue;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.login-social__buttons{
+    margin-top: 1.5rem;
+}
+
+
+.login-social__button{
+    padding: 0rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border: none;
+}
+
+.login-form__button{
+    padding: 0.5rem 1rem;
+    margin: 1.5rem 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    background-color: rgb(107, 7, 140);
+    color: aliceblue;
+    font-size: 1rem;
+    border: none;
+}
+
+.login-form__button--invisible{
+    background: transparent;
+    border: none;
+    color: rgb(126, 51, 151);
+}
+
+.login-form__button--invisible:hover{
+    cursor: pointer;
+    color: rgb(196, 123, 255);
+}
+
+.login-form__button:hover{
+    cursor: pointer;
+    background-color: rgb(126, 51, 151);
+}
+
+.login-social__button:hover{
+    cursor: pointer;
+    background-color: rgb(107, 7, 140);
+}
+
+a{
+    color: rgb(155, 41, 255);
+    font-size: 0.8rem;
+}
+
+.control input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.control input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #560568;
+}
+
+.control.invalid input {
+  border-color: red;
+  background: #fbdada;
+}
+
+.login-form__button:disabled,
+.login-form__button:focus:disabled,
+.login-form__button:hover:disabled,
+.login-form__button:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}

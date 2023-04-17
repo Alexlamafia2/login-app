@@ -1,0 +1,23 @@
+.main{
+    margin-top: 10rem;
+}
+
+.main-h1{
+    color: aliceblue;
+    font-size: 5rem;
+}
+
+.main-button{
+    padding: 1rem 1.5rem;
+
+    border-radius: 1rem;
+    background-color: rgb(107, 7, 140);
+    color: aliceblue;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.main-button:hover{
+    cursor: pointer;
+    background-color: rgb(126, 51, 151);
+}
